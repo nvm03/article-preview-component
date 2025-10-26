@@ -1,6 +1,6 @@
 :root{
     --container: 20.438rem;
-    --big-container: 38rem;
+    --big-container: 45.625rem;
     --wrapper: 16.25rem;
 
     --white: hsl(0, 100%, 100%);
@@ -148,12 +148,13 @@ p{margin: 0;}
         display: none;
     }
     .container{
-        width: max(80%, var(--big-container));
+        width: min(80%, var(--big-container));
+        max-height: 21.625rem;
         display: flex;
         overflow: visible;
     }
     .image{
-        min-width: 14.313rem;
+        max-width: 14.313rem;
         height: 21.625rem;
         
     }
@@ -225,12 +226,12 @@ p{margin: 0;}
 
 @media (min-width: 50rem){
     .container{
-        width: max(80%, var(--big-container));
+        max-width: min(80%, var(--big-container));
         display: flex;
     }
     .image{
-        min-width: 17.813rem;
-        min-height: 17.5rem;
+        min-width: 17.5rem;
+        min-height: 17.813rem;
     }
     .image img{
         height:100%; 
@@ -241,6 +242,4 @@ p{margin: 0;}
     .author{
         margin-top: 1.5rem;
     }
-    
-    
 }
